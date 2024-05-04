@@ -1,11 +1,15 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Product 1",
       "description": "This is the description for Product 1.",
       "price": 9.99,
-      "category": "Category A"
+      "category": "Category A",
+      "id": 1,
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
     },
     {
       "id": 2,
@@ -13,7 +17,72 @@
       "description": "This is the description for Product 2.",
       "price": 14.99,
       "category": "Category B",
-      "tags": ["tag1", "tag2"]
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "name": "product 3",
+      "description": "dummy description for product 3",
+      "price": "20.00",
+      "category": "Category B",
+      "id": 3,
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "This is the description for Product 4.",
+      "price": 14.99,
+      "category": "Category C",
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "description": "This is the description for Product 5.",
+      "price": 14.99,
+      "category": "Category C",
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "description": "This is the description for Product 6.",
+      "price": 14.99,
+      "category": "Category D",
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "description": "This is the description for Product 7.",
+      "price": 14.99,
+      "category": "Category A",
+      "tags": [
+        "tag1",
+        "tag2"
+      ]
+    },
+    {
+      "name": "New product",
+      "description": "dummy description for new product",
+      "price": "120",
+      "category": "fashion",
+      "id": 8
     }
   ]
 }
