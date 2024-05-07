@@ -49,8 +49,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+      {<ProductList /> ? (<ProductList />) : (<p>Server Loading...</p>)}
 
-      <ProductList />
       <div className="bg-gray-100 text-lg container mx-auto min-h-[90vh]">
         <ToastContainer
           position="top-right"

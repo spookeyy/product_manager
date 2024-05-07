@@ -21,13 +21,11 @@ function ProductList() {
               return (
                 <div key={product.id} className="">
                   <div className="container mx-auto ml-3 py-8 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="">
                       <img
                         className="p-8 rounded-t-lg"
                         src={product.image}
                         alt="product image"
                       />
-                    </a>
                     <div className="px-5 pb-5">
                       <a href="">
                         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">

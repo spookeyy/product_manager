@@ -14,7 +14,7 @@ ProductForm.propTypes = {
     image: PropTypes.string,
   }),
   onSubmit: PropTypes.func.isRequired, //onSubmit prop is a required function
-  buttonText: PropTypes.string,
+  buttonText: PropTypes.string,  //not to be included as a property
 };
 
 function ProductForm({ product, onSubmit, buttonText }) {
@@ -75,7 +75,7 @@ function ProductForm({ product, onSubmit, buttonText }) {
             type="url"
             id="image"
             name="image"
-            placeholder="image url"
+            placeholder="image link address"
             value={formData.image}
             onChange={handleChange}
             required
