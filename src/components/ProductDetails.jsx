@@ -22,12 +22,20 @@ function ProductDetails() {
       <p>{product.description}</p>
       <p>Price: KSH {product.price}</p>
       <p>Category: {product.category}</p>
-      <Link
-        to={`/edit/${product.id}`}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Edit
-      </Link>
+      <div>
+        <Link
+          to={`/edit/${product.id}`}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
+        >
+          Edit
+        </Link>
+        <button
+          className="bg-red-500 hover:bg-red-900 text-white font-bold py-1.5 px-4 ml-6 rounded"
+          type="submit"
+        >
+          Delete
+        </button>
+      </div>
       {/* relevant details */}
     </div>
   );

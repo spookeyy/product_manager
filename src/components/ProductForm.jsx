@@ -25,6 +25,7 @@ function ProductForm({ product, onSubmit }) {
 
   const handleChange = (event) => {
     setFormData({
+      //spread operator
       ...formData,
       [event.target.name]: event.target.value,
     });
@@ -55,6 +56,7 @@ function ProductForm({ product, onSubmit }) {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-4">
@@ -71,6 +73,7 @@ function ProductForm({ product, onSubmit }) {
             name="description"
             value={formData.description}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-4">
@@ -87,6 +90,7 @@ function ProductForm({ product, onSubmit }) {
             name="price"
             value={formData.price}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-6">
@@ -103,6 +107,7 @@ function ProductForm({ product, onSubmit }) {
             name="category"
             value={formData.category}
             onChange={handleChange}
+            required
           />
         </div>
 

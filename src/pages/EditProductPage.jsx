@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams, Outlet } from "react-router-dom";
 import ProductForm from "../components/ProductForm";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function EditProductPage() {
+  const nav = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [success, setSuccess] = useState(false);
@@ -24,8 +27,11 @@ function EditProductPage() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Product updated:", data);
-        setSuccess(true);
+        console.log("Product updated:", data)
+        nav("/")
+        // console.log(toast())
+        setSuccess(true)
+        toast.success("Product updated successfully!");
       })
       .catch((error) => console.error("Error updating product:", error));
   };
@@ -35,13 +41,18 @@ function EditProductPage() {
   }
 
   return (
-    <div>
-      <h1>Edit Product</h1>
+    <div className="mx-auto">
+      <h1 className="text-3xl font-bold">Edit Product</h1>
       {success ? (
         <div>Product updated successfully!</div>
       ) : (
         <ProductForm product={product} onSubmit={handleSubmit} />
       )}
+
+      <div className="bg-gray-100 text-lg container mx-auto min-h-[90vh]">
+        <ToastContainer />
+        <Outlet />
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import ProductDetails from "../components/ProductDetails";
 function ProductDetailsPage() {
   return (
     <div>
-      <h1>Product Details</h1>
+      <h1 className="text-2xl items-center font-bold">Product Details</h1>
       <ProductDetails />
     </div>
   );
