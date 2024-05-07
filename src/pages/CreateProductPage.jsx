@@ -21,7 +21,7 @@ function CreateProductPage() {
         console.log("Product created:", data);
         setSuccess(true);
         nav("/");
-        toast.success("Product created successfully!");
+        // toast.success("Product created successfully!");
       })
       .catch((error) => console.error("Error creating product:", error));
   };
@@ -32,10 +32,11 @@ function CreateProductPage() {
       <div>
         {success ? (
           <div>
-            {<p>test</p> }
+            {<p>test toast</p> }
+            {toast.success("Product created successfully!")}
           </div>
         ) : (
-          <ProductForm onSubmit={handleSubmit} />
+          <ProductForm onSubmit={handleSubmit} buttonText="Submit" />
         )}
       </div>
 

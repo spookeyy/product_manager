@@ -10,13 +10,17 @@ ProductForm.propTypes = {
     description: PropTypes.string,
     price: PropTypes.number,
     category: PropTypes.string,
+    buttonText: PropTypes.string,
+    image: PropTypes.string,
   }),
   onSubmit: PropTypes.func.isRequired, //onSubmit prop is a required function
+  buttonText: PropTypes.string,
 };
 
-function ProductForm({ product, onSubmit }) {
+function ProductForm({ product, onSubmit, buttonText }) {
   const [formData, setFormData] = useState({
     name: product ? product.name : "",
+    image: product ? product.image : "",
     description: product ? product.description : "",
     price: product ? product.price : "",
     category: product ? product.category : "",
@@ -55,6 +59,24 @@ function ProductForm({ product, onSubmit }) {
             id="name"
             name="name"
             value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-6">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="category"
+          >
+            Image
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            type="url"
+            id="image"
+            name="image"
+            placeholder="image url"
+            value={formData.image}
             onChange={handleChange}
             required
           />
@@ -116,7 +138,7 @@ function ProductForm({ product, onSubmit }) {
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           type="submit"
         >
-          Submit
+          {buttonText}
         </button>
       </form>
     </div>

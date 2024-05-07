@@ -41,12 +41,16 @@ function EditProductPage() {
   }
 
   return (
-    <div className="mx-auto">
+    <div className="w-full max-w-xs">
       <h1 className="text-3xl font-bold">Edit Product</h1>
       {success ? (
         <div>Product updated successfully!</div>
       ) : (
-        <ProductForm product={product} onSubmit={handleSubmit} />
+        <ProductForm
+          product={product}
+          onSubmit={handleSubmit}
+          buttonText="Update Product"
+        />
       )}
 
       <div className="bg-gray-100 text-lg container mx-auto min-h-[90vh]">
