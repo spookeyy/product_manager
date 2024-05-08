@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { setSearchQuery } from "./ProductList";
+import ProductList from "../components/ProductList";
 
 function Header() {
 const [search, setSearch] = useState("");
@@ -8,7 +8,8 @@ const [search, setSearch] = useState("");
 
   //handle search
  const handleSearch = (event) => {
-   setSearchQuery(event.target.value);
+  <ProductList search={search} />
+   setSearch(event.target.value);
  };
 
   return (
