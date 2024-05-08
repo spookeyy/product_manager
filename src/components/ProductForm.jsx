@@ -15,7 +15,6 @@ ProductForm.propTypes = {
   }),
   onSubmit: PropTypes.func.isRequired, //onSubmit prop is a required function
   buttonText: PropTypes.string,  //not to be included as a property
-  search: PropTypes.string,
 };
 
 function ProductForm({ product, onSubmit, buttonText }) {

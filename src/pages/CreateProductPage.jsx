@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProductForm from "../components/ProductForm";
 import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 function CreateProductPage() {
@@ -21,7 +21,8 @@ function CreateProductPage() {
         console.log("Product created:", data);
         setSuccess(true);
         nav("/");
-        // toast.success("Product created successfully!");
+        toast.success("Product created successfully!");
+        
       })
       .catch((error) => console.error("Error creating product:", error));
   };
@@ -32,7 +33,7 @@ function CreateProductPage() {
       <div>
         {success ? (
           <div>
-            {<p>test toast</p> }
+            {<p>test toast</p>}
             {toast.success("Product created successfully!")}
           </div>
         ) : (
@@ -40,7 +41,7 @@ function CreateProductPage() {
         )}
       </div>
 
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </div>
   );
 }

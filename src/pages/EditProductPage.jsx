@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, Outlet } from "react-router-dom";
 import ProductForm from "../components/ProductForm";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function EditProductPage() {
@@ -54,7 +54,7 @@ function EditProductPage() {
       )}
 
       <div className="bg-gray-100 text-lg container mx-auto min-h-[90vh]">
-        <ToastContainer />
+        {/* <ToastContainer /> */}
         <Outlet />
       </div>
     </div>

@@ -11,6 +11,7 @@ const [search, setSearch] = useState("");
   <ProductList search={search} />
    setSearch(event.target.value);
  };
+ console.log(search)
 
   return (
     <header>
