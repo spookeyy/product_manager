@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function ProductList() {
+function ProductList({search, setSearchQuery}) {
   const [products, setProducts] = useState([]); //state to store products
 
   useEffect(() => {
@@ -10,6 +10,7 @@ function ProductList() {
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
+
 
   return (
     <>
