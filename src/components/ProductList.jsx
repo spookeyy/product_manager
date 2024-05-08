@@ -110,7 +110,7 @@ console.log(productList);
                           dark:focus:ring-blue-800"
                         >
                           {/* {product.name} */}
-                          View
+                          View Product
                         </Link>
                       </div>
                     </div>

@@ -41,7 +41,7 @@ function ProductForm({ product, onSubmit, buttonText }) {
   };
 
   return (
-    <div className="w-full max-w-xs">
+    <div className="w-full mt-8 mb-8 max-w-xs">
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"

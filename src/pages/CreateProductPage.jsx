@@ -28,8 +28,8 @@ function CreateProductPage() {
   };
 
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center h-screen">
-      <h1 className="text-3xl font-bold underline">Create Product</h1>
+    <div className="flex flex-col flex-wrap justify-center items-center h-screen bg-blue-200">
+      <h1 className="mb-10 ml-3 text-3xl font-bold underline">Create Product</h1>
       <div>
         {success ? (
           <div>

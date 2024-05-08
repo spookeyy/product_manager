@@ -49,10 +49,10 @@ function ProductDetails() {
             </a>
             <div className="px-5 pb-5">
               <a href="">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {product.name}
                 </h5>
-                <h5 className="text-l font-semibold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="text-l tracking-tight text-gray-900 dark:text-white">
                   {product.description}
                 </h5>
               </a>
@@ -63,7 +63,7 @@ function ProductDetails() {
                         </span> */}
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                <span className="text-2xl font-bold text-gray-900 dark:text-white">
                   ${product.price}
                 </span>
               </div>
@@ -71,7 +71,7 @@ function ProductDetails() {
             <div>
               <Link
                 to={`/edit/${product.id}`}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-3 py-2 px-6 rounded"
               >
                 Edit
               </Link>
