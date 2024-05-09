@@ -9,7 +9,7 @@ function CreateProductPage() {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (formData) => {
-    fetch("http://localhost:3000/products", {
+    fetch("https://product-manager-uo3h.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,26 +22,22 @@ function CreateProductPage() {
         setSuccess(true);
         nav("/");
         toast.success("Product created successfully!");
-        
       })
       .catch((error) => console.error("Error creating product:", error));
   };
 
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center h-screen bg-blue-200">
+    <div className="flex flex-col flex-wrap justify-center items-center h-screen bg-blue-100">
       <h1 className="mb-10 ml-3 text-3xl font-bold underline">Create Product</h1>
       <div>
         {success ? (
           <div>
-            {<p>test toast</p>}
             {toast.success("Product created successfully!")}
           </div>
         ) : (
           <ProductForm onSubmit={handleSubmit} buttonText="Submit" />
         )}
       </div>
-
-      {/* <ToastContainer /> */}
     </div>
   );
 }

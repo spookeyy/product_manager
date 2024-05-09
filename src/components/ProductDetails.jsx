@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function ProductDetails() {
   const nav = useNavigate();
@@ -7,7 +8,7 @@ function ProductDetails() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/products/${id}`)
+    fetch(`https://product-manager-uo3h.onrender.com/products/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data))
       .catch((error) => console.error("Error fetching product:", error));
@@ -18,12 +19,14 @@ function ProductDetails() {
   }
 
   const deleteProduct = () => {
-    fetch(`http://localhost:3000/products/${id}`, {
+    fetch(`https://product-manager-uo3h.onrender.com/products/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
       .then((data) => {
         nav("/");
+        toast.success("Product deleted successfully!");
+        
         console.log(data);
       })
 

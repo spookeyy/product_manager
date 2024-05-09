@@ -1,5 +1,6 @@
 import ProductList from "../components/ProductList";
 import { ToastContainer } from "react-toastify";
+// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function HomePage() {
@@ -9,7 +10,7 @@ function HomePage() {
         Welcome to the Product Management App
       </h1> */}
 
-      <div id="gallery" className="relative w-full mt-8" data-carousel="slide">
+      <div id="gallery" className="relative w-full " data-carousel="slide">
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <img
@@ -119,7 +120,6 @@ function HomePage() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="dark"
         />
       </div>
     </div>
