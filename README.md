@@ -30,9 +30,10 @@ Currently, two official plugins are available:
 
 
 ## Live link
-####Tools used: 
+#### Tools used: 
 - Netlify - deploy react frontend
 - Render - deploy backend (mock server)
+  
 Deployed Frontend can be accessed here https://gina-product-mg.netlify.app/
 Deployed Backend can be accessed here https://product-manager-uo3h.onrender.com/products 
 
