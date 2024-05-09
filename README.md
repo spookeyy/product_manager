@@ -1,12 +1,12 @@
 # Product Manager App
-#### The app is a simple Project Manager project, 09/05/2024
+#### Gina is a simple Project Manager project, 09/05/2024
 #### *By Wendy Kariuki, Regina Ngunga, Alex Kiprono, Meshack Pangas*
 ## Project Description
-    Its a simple  Project Manager app
+    The online store will provide a convenient and user-friendly product management experience for product managers
 ## Setup/Installation Requirements
-    - Open repository on Github.
-    - Fork and clone to have a local repository
-    - Open folder in vs code.
+    - Fork and Clone this repository; `https://github.com/spookeyy/product_manager`
+    - Navigate to the directory and `cd product_manager` folder in your terminal.
+    - use ``` code . ``` command to open the folder in VScode
     - Run yarn dev
         yarn add <package-name>
         yarn install
@@ -14,6 +14,18 @@
     
     - And your application is running.
 
+##Getting started
+- Run this commands to get started:
+  ```
+  npm install
+  npm run dev
+  ```
+  or
+  ```
+  yarn install
+  yarn dev
+  ```
+  - And the application is running in the browser.
 # React + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -24,8 +36,11 @@ Currently, two official plugins are available:
 
 
 ## Live link
-Deployed Frontend can be accessed here [App]()  
-Deployed Backend can be accessed here [App]()  
+####Tools used: 
+- Netlify - deploy react frontend
+- Render - deploy backend (mock server)
+Deployed Frontend can be accessed here https://gina-product-mg.netlify.app/
+Deployed Backend can be accessed here https://product-manager-uo3h.onrender.com/products 
 
 
 ## Known Bugs
@@ -33,12 +48,13 @@ Deployed Backend can be accessed here [App]()
     Otherwise application works perfectly well, no bugs.
 
 ## Technologies used
-    - React
+    - React Js
     - Vite
     - React Router
-    - Tailwind Css
+    - Tailwind CSS
 #### package managers
-    - ```Yarn``` conversant with ```npm```
+    - ```npm``` conversant with ```yarn```
+    
 
 ## Support and contact details
     - email :: phaminuswendy@gmail.com, wambuiregina28@gmail.com, lexiekiprono@gmail.com, pangasmeshack@gmail.com
@@ -48,8 +64,3 @@ Deployed Backend can be accessed here [App]()
 ### License
 *Licenced under the MIT Licence
 Copyright (c) 2024 **Wendy Kariuki, Regina Ngunga, Alex Kiprono, Meshack Pangas
-
-yarn dev
-yarn add <package-name>
-yarn install
-yarn build
