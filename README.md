@@ -35,12 +35,13 @@ Currently, two official plugins are available:
 - Render - deploy backend (mock server)
   
 Deployed Frontend can be accessed here https://gina-product-mg.netlify.app/
+
 Deployed Backend can be accessed here https://product-manager-uo3h.onrender.com/products 
 
 
 ## Known Bugs
-    The application images dissapears in heroku
-    Otherwise application works perfectly well, no bugs.
+  The application images dissapears in heroku
+  Otherwise application works perfectly well, no bugs.
 
 ## Technologies used
     - React Js
@@ -48,7 +49,7 @@ Deployed Backend can be accessed here https://product-manager-uo3h.onrender.com/
     - React Router
     - Tailwind CSS
 #### package managers
-    - ```npm``` conversant with ```yarn```
+- ```npm``` conversant with ```yarn```
     
 
 ## Support and contact details
