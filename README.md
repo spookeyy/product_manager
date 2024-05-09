@@ -2,19 +2,13 @@
 #### Gina is a simple Project Manager project, 09/05/2024
 #### *By Wendy Kariuki, Regina Ngunga, Alex Kiprono, Meshack Pangas*
 ## Project Description
-    The online store will provide a convenient and user-friendly product management experience for product managers
+The online store will provide a convenient and user-friendly product management experience for product managers
 ## Setup/Installation Requirements
-    - Fork and Clone this repository; `https://github.com/spookeyy/product_manager`
-    - Navigate to the directory and `cd product_manager` folder in your terminal.
-    - use ``` code . ``` command to open the folder in VScode
-    - Run yarn dev
-        yarn add <package-name>
-        yarn install
-        yarn build
-    
-    - And your application is running.
+- Fork and Clone this repository; `https://github.com/spookeyy/product_manager`
+- Navigate to the directory and `cd product_manager` folder in your terminal.
+- use `code . ` command to open the folder in VScode
 
-##Getting started
+## Getting started
 - Run this commands to get started:
   ```
   npm install
